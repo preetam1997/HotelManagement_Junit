@@ -2,10 +2,9 @@ package com.bridgeLabz.JunitHotelManagement;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Calendar;
 
 public class DateClass {
 	
@@ -21,5 +20,10 @@ public class DateClass {
 		return date;
 		
 	}
-		
+	
+	public static void main(String[] args) throws Exception {
+		DateFormat format2=new SimpleDateFormat("EEEE");
+		String Date = format2.format(DateClass.StringToDate("10Sep2018"));
+		System.out.println(Date);
+	}
 }

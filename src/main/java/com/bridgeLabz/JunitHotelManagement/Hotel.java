@@ -8,14 +8,17 @@ public class Hotel {
 	private Employee Emp;
 	private Date date;
 	private String Customer;
+	private double Weekend_Rates;
+	
 	private double Rates;
 	
-	public Hotel(String Name,String Customer,double Rates,Date date) {
+	public Hotel(String Name,String Customer,double Rates,double Weekend_Rates,Date date) {
 		
 		this.Name = Name;
 		this.Customer = Customer;
 		this.Rates = Rates;
 		this.date = date;
+		this.Weekend_Rates = Weekend_Rates;
 	}
 	
 	public Hotel(String Name,Employee Emp) {
@@ -32,5 +35,9 @@ public class Hotel {
 	}
 	public String getName() {
 		return Name;
+	}
+	
+	public double getWeekend_Rates() {
+		return Weekend_Rates;
 	}
 }
